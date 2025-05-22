@@ -31,5 +31,5 @@ It allows efficient insertion and retrieval of events based on time or alphabeti
 
 ```java
 PriorityEvents events = new PriorityEvents(5);
-events.enqueue(new Event("CS Lecture", LocalDateTime.of(2025, 5, 23, 10, 0)));
-System.out.println(events.dequeue());
+events.addEvent(new Event("CS Lecture", LocalDateTime.of(2025, 5, 23, 10, 0)));
+System.out.println(events.removeNext());
